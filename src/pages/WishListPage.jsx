@@ -1,5 +1,14 @@
 import { Ellipsis, LayoutGrid, LayoutList, Search, Share2 } from "lucide-react";
 import WishListItemsContainer from "../components/wishlist-page/WishListItemsContainer";
+import useWishListStore from "../store/useWishListStore";
+import { memo } from "react";
+import SearchWishListItem from "../components/wishlist-page/SearchWishListItem";
+
+// you can optimize those icons
+const MemoEllipsis = memo(Ellipsis);
+const MemoShare2 = memo(Share2);
+const MemoLayoutGrid = memo(LayoutGrid);
+const MemoLayoutList = memo(LayoutList);
 
 export default function WishListPage() {
   return (
@@ -20,32 +29,29 @@ export default function WishListPage() {
             <p className="text-sm font-extralight">Public</p>
           </div>
           <div className="flex gap-2 justify-center items-center">
-            <div className="flex gap-0.5 justify-center items-center">
-              <Share2 strokeWidth={1.75} width={14} color="#2b7fff" />
+            <div className="flex gap-0.5 justify-center items-center cursor-pointer">
+              <MemoShare2 strokeWidth={1.75} width={14} color="#2b7fff" />
               <p className="text-blue-500 text-sm">Send list to others</p>
             </div>
-            <Ellipsis size={24} strokeWidth={1.75} />
+            <MemoEllipsis
+              size={24}
+              strokeWidth={1.75}
+              className="cursor-pointer"
+            />
           </div>
         </div>
         {/*  */}
         <div className="flex justify-between">
           <div className="flex gap-2 items-center">
             <div className="cursor-pointer bg-yellow-100 p-2">
-              <LayoutGrid size={22} strokeWidth={1.75} />
+              <MemoLayoutGrid size={22} strokeWidth={1.75} />
             </div>
             <div className="cursor-pointer  p-2">
-              <LayoutList size={22} strokeWidth={1.75} />
+              <MemoLayoutList size={22} strokeWidth={1.75} />
             </div>
           </div>
           <div className="flex gap-4 items-center">
-            <div className="flex gap-2 border-gray-200 rounded-md bg-gray-200 px-2 py-1 items-center">
-              <Search size={28} strokeWidth={1.75} className="text-gray-400" />
-              <input
-                type="text"
-                placeholder="Search"
-                className="outline-none text-gray-700 placeholder-gray-400"
-              />
-            </div>
+            <SearchWishListItem />
             <select className="bg-gray-200 px-2 py-1 rounded-md">
               <option>Filter & Sort</option>
             </select>

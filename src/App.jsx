@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import WishListPage from "./pages/WishListPage";
 
 function App() {
+  console.log("App rendering");
   return (
     <>
       <Navbar />
