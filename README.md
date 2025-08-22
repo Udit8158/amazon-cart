@@ -1,12 +1,22 @@
-# React + Vite
+This is a fun little learning project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Learned about:
 
-Currently, two official plugins are available:
+- State management 
+- Tailwind beauty 
+- Routing in react 
+- Searching and adjusting state 
+- Keyboard shortcut for searching 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### Routes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    - /wish-list -> for seeing the wishlist items (click on the amazon logo to go)
+    - /cart -> for viewing and managing cart items (click ont the cart icon to go)
+
+### Local setup:
+    
+    - Just install packages [npm install]
+    - Run the app [npm run dev]
+
+simple... :)
