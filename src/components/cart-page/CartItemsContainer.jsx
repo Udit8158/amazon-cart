@@ -2,8 +2,6 @@ import { memo } from "react";
 import useCartStore from "../../store/useCartStore";
 import CartItem from "./CartItem";
 
-const MemorizedCartItem = memo(CartItem);
-
 export default memo(function CartItemsConainer() {
   const cartItems = useCartStore((state) => state.cartItems);
 

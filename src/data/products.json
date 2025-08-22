@@ -17,7 +17,7 @@
 
   {
     "id": "3",
-    "name": "Computer Monitor",
+    "name": "LG Ultra Pro Max Coding Monitor",
     "description": "24-inch Full HD IPS Monitor with Ultra-Thin Bezel and HDMI/VGA Ports",
     "price": 9990.0,
     "image": "https://m.media-amazon.com/images/I/618zObTziUL._AC_UY327_FMwebp_QL65_.jpg"
@@ -44,23 +44,23 @@
     "name": "Boat Rockerz 255 Pro+ Bluetooth Earphones",
     "description": "Up to 40 Hours Playback, ASAP Charge, IPX7 Water Resistance",
     "price": 1499.0,
-    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+    "image": "https://m.media-amazon.com/images/I/61+SW9nDTEL._AC_UY327_FMwebp_QL65_.jpg"
   },
 
   {
     "id": "7",
-    "name": "Mi Power Bank 3i 20000mAh",
+    "name": "Mi Power Bank 4i 20000mAh",
     "description": "18W Fast Charging, Triple Output, Two Input Ports",
-    "price": 1799.0,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80"
+    "price": 2199.0,
+    "image": "https://m.media-amazon.com/images/I/611J+4ry-vL._AC_UY327_FMwebp_QL65_.jpg"
   },
 
   {
     "id": "8",
     "name": "AmazonBasics Laptop Stand",
     "description": "Ventilated Adjustable Stand, Compatible with 10-15.6 inch Laptops",
-    "price": 899.0,
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80"
+    "price": 399.0,
+    "image": "https://m.media-amazon.com/images/I/61jnQQBK4tL._AC_UY327_FMwebp_QL65_.jpg"
   },
 
   {
@@ -68,7 +68,7 @@
     "name": "TP-Link WiFi Range Extender",
     "description": "300Mbps Universal Repeater, Easy Setup, Compatible with All Routers",
     "price": 1099.0,
-    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+    "image": "https://m.media-amazon.com/images/I/61+8YQqHC0L._AC_UY327_FMwebp_QL65_.jpg"
   },
 
   {
@@ -76,6 +76,6 @@
     "name": "SanDisk Ultra 64GB USB 3.0 Flash Drive",
     "description": "Transfer Speeds up to 100MB/s, Sleek and Compact Design",
     "price": 499.0,
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+    "image": "https://m.media-amazon.com/images/I/51uBDIyAZlL._AC_UY327_FMwebp_QL65_.jpg"
   }
 ]
