@@ -3,6 +3,7 @@ import WishListItemsContainer from "../components/wishlist-page/WishListItemsCon
 import useWishListStore from "../store/useWishListStore";
 import { memo } from "react";
 import SearchWishListItem from "../components/wishlist-page/SearchWishListItem";
+import { Link } from "react-router";
 
 // you can optimize those icons
 const MemoEllipsis = memo(Ellipsis);
@@ -58,6 +59,7 @@ export default function WishListPage() {
           </div>
         </div>
         {/*  */}
+        <Link to={"/cart"}>Cart</Link>
         <WishListItemsContainer />
       </div>
     </div>

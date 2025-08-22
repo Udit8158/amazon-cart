@@ -1,4 +1,4 @@
-const { create } = require("zustand");
+import { create } from "zustand";
 
 const item = {
   id: "1",
@@ -44,20 +44,23 @@ const useCartStore = create((set) => {
 
     // delete 1 item count or delete the whole item object if count is 1
 
-    deleteFromCart: (selectedItemId) =>
+    deleteFromCart: ({ selectedItemId, deleteAll = false }) =>
       set((state) => {
         const foundItem = state.cartItems.find(
           (item) => item.id === selectedItemId
         );
         // the found item should be there (so no point to check if not found item)
 
-        if (foundItem?.count === 1) {
+        // delete all
+        if (foundItem?.count === 1 || deleteAll) {
           return {
             cartItems: state.cartItems.filter(
               (item) => item.id !== selectedItemId
             ),
           };
         }
+
+        // decrement count
         if (foundItem?.count > 1) {
           const newCartItems = state.cartItems.map((item) => {
             return item.id === selectedItemId

@@ -19,11 +19,15 @@ export default function SearchWishListItem() {
   const searchWishListItems = useWishListStore(
     (state) => state.searchWishListItems
   );
+  const setDataToProducts = useWishListStore(
+    (state) => state.setDataToProducts
+  );
 
   const searchInputRef = useRef();
 
   // Add an window event listne in entire dom to focus this input search with key
   useEffect(() => {
+    console.log("search - ", searchInputRef.current.value);
     function onKeyDownListner(event) {
       if ((event.ctrlKey || event.metaKey) && event.key === "k") {
         searchInputRef.current.focus();
@@ -38,6 +42,8 @@ export default function SearchWishListItem() {
     // Remove the lisner on unmount
     return () => {
       window.removeEventListener("keydown", onKeyDownListner);
+      // This is so damn powerful
+      setDataToProducts(); // Setting data to actuall products (all products) at unmount
     };
   }, []);
   return (

@@ -15,7 +15,13 @@ const useWishListStore = create((set) => {
           return {
             wishListItems: [...matchedItems],
           };
-        } else return { wishListItems: products };
+        } else return { wishListItems: [...products] };
+      }),
+    // you have to run this function on mount to set the producs,
+    // specially imp when monting after unmount
+    setDataToProducts: () =>
+      set((state) => {
+        return { wishListItems: [...products] };
       }),
   };
 });
